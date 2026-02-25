@@ -10,11 +10,23 @@ CardCast is an Anki add-on that allows you to batch-export the audio from your f
 ## Why it exists
 Reviewing flashcards usually requires staring at a screen. CardCast was built to make studying hands-free. By stitching together the audio fields of your cards (with customizable pauses in between), you can listen to your Anki card while commuting, walking, or at the gym.
 
+
 ## Prerequisites
 To stitch the audio files together, this add-on requires **FFmpeg** to be installed on your system.
 * **Mac:** Install via Homebrew: `brew install ffmpeg`
 * **Windows/Linux:** Download from the [official FFmpeg site](https://ffmpeg.org/download.html) and ensure it is added to your system PATH.
 
+## Installation
+
+The easiest way to install CardCast is through AnkiWeb.
+
+1. Open Anki and navigate to **Tools** -> **Add-ons**.
+2. Click on **Get Add-ons...**.
+3. Paste the code: `1697388828`
+4. Click **OK** to download.
+5. Restart Anki to complete the installation.
+
+View the add-on page on [AnkiWeb](https://ankiweb.net/shared/info/1697388828).
 ## How to Use
 1. Open the **Browse** window in Anki.
 2. Select the cards you want to export.
@@ -54,8 +66,9 @@ To package the add-on for sharing (via AnkiWeb or direct download), use the incl
 Open your terminal in the root of the project repository.
 
 ```bash
-chmod +x build.sh
+sh build.sh
 ```
+
 This will generate a cardcast_release.ankiaddon file in your project folder, which is ready to be uploaded to AnkiWeb or shared directly.
 
 Make the script executable (you only need to do this once):
